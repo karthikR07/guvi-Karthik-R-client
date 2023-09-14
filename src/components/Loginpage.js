@@ -120,7 +120,7 @@ const LoginPage = () => {
           </form>
         </div>
         <div className='section2'>
-          Don't have an account ? <Link to="/"> Signup Now</Link>
+          Don't have an account ? <Link to="/"> Signup Now </Link>
         </div>
       </div>
     </div>
