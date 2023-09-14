@@ -27,7 +27,7 @@ const ProfilePage = () => {
         email: '',
         age: '',
         dob: '',
-        mobile: '', // Added mobile field
+        mobile: '', 
     });
 
     const [userData, setUserData] = useState({
@@ -35,7 +35,7 @@ const ProfilePage = () => {
         email: '',
         age: '',
         dob: '',
-        mobile: '', // Added mobile field
+        mobile: '', 
     });
 
     const [formErrors, setFormErrors] = useState({
@@ -43,7 +43,7 @@ const ProfilePage = () => {
         email: '',
         age: '',
         dob: '',
-        mobile: '', // Added mobile field
+        mobile: '',
     });
 
     const intialFetch = ()=>{

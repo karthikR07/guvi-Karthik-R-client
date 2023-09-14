@@ -3,7 +3,6 @@ import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios'
 
 const SignupPage = () => {
-  // Step 2: Create state variables for form input values
 
   const navigate = useNavigate();
 
@@ -14,7 +13,6 @@ const SignupPage = () => {
     confirmPass: '',
   });
 
-  // Step 3: Create state variables for error messages
   const [errors, setErrors] = useState({
     name: '',
     email: '',
@@ -22,7 +20,6 @@ const SignupPage = () => {
     confirmPass: '',
   });
 
-  // Step 4: Implement real-time validation logic
   const validateField = (fieldName, value) => {
     switch (fieldName) {
       case 'name':
@@ -65,7 +62,6 @@ const SignupPage = () => {
     validateField(name, value);
   };
 
-  // Step 5: Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -83,7 +79,6 @@ const SignupPage = () => {
     });
 
     if (isNameValid && isEmailValid && isPasswordValid && isConfirmPassValid) {
-      // Form is valid, you can proceed with your desired action here
       const finalData = {
         name: formData.name,
         mail: formData.email,
@@ -107,7 +102,6 @@ const SignupPage = () => {
     }
   };
 
-  // Step 1: Render the form
   return (
     <div id="container1">
       <div className="section1">
